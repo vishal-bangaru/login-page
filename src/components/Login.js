@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const Login = () => {
   useEffect(() => {
     const form = document.querySelector('.login-form');
     if (form) {
       form.classList.add('animate__animated', 'animate__zoomIn');
-       // Using animate.css for animations
+       
     }
   }, []);
 
@@ -24,7 +24,6 @@ const Login = () => {
 
 export default Login;
 
-// Styled Components
 const LoginPage = styled.div`
   height: 100vh;
   display: flex;
